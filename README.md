@@ -1,1 +1,1 @@
-# master
+Rakuten Ticket App for Android
