@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/button_rectangle_shape"
+        android:backgroundTint="@color/ticket_row_background"
+        android:gravity="center"
+        android:text="@string/ticket_status_over"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_weight="3"
+        android:background="@drawable/button_rectangle_radius_shape"
+        android:backgroundTint="@color/ticket_row_background"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/button_rectangle_radius_shape"
+                android:backgroundTint="@color/ticket_row_background"
+                android:textColor="@color/ticket_row_text"
+                android:textSize="24sp"
+                tools:text="ダミー席(指定席A(1))" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/button_rectangle_radius_shape"
+                android:backgroundTint="@color/ticket_row_background"
+                android:textColor="@color/ticket_row_text"
+                android:textSize="24sp"
+                tools:text="発券済み:2012年12月12日" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

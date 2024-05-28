@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Login -->
+    <string name="app_name">Checkin Station</string>
+    <string name="username_unit">ユーザー名</string>
+    <string name="company_code_unit">企業コード</string>
+    <string name="password_unit">パスワード</string>
+    <string name="login_button_text">ログイン</string>
+
+    <!-- Menu -->
+    <string name="printer_setting">プリンター設定</string>
+    <string name="print_test">テスト印刷</string>
+    <string name="read_test">テスト読み取り</string>
+    <string name="ticket_mode_setting">発券モードの設定</string>
+    <string name="qrcode_image_setting">QR入力用画像の設定</string>
+    <string name="begin_login">受付開始</string>
+    <string name="current_ticket_mode">現在の発券モードの表示: </string>
+    <string name="general_mode">汎用発券</string>
+    <string name="all_mode">一括発券</string>
+    <string name="single_mode">個別発券</string>
+    <string name="file_select_image">ファイル選択</string>
+    <string name="default_image">デフォルト</string>
+    <string name="scan_qrcode_test">QRをかざして読み取ってください</string>
+    <string name="scan_qrcode_description">下に読み取ったQRの値が表示されます</string>
+    <string name="select_device">選択してください</string>
+
+    <!-- Scan QRCode -->
+    <string name="scan_qrcode_title">QRコード読み取り</string>
+    <string name="scan_qrcode_dialog_camera_permission_error_title">カメラに接続できません</string>
+    <string name="scan_qrcode_dialog_camera_permission_error_message">設定からカメラをオンにしてください</string>
+    <string name="scan_qrcode_dialog_camera_permission_error_button">設定へ</string>
+    <string name="scan_qrcode_notice">QRを枠内におさめて読み取ってください</string>
+    <string name="notice_message">タブレット左中央のカメラに\nQRをかざして読み込んでください</string>
+
+    <!--marginal button-->
+    <string name="marginal_button_menu">メニュー</string>
+    <string name="marginal_button_again_true">通常モードに戻る</string>
+    <string name="marginal_button_again_false">再発券モード</string>
+    <string name="marginal_button_logout">ログアウト</string>
+    <string name="marginal_button_top">トップ</string>
+    <string name="marginal_button_back">◀戻る</string>
+    <string name="marginal_button_to_reissue">再発券モード</string>
+    <string name="marginal_button_to_normal">通常モードに戻る</string>
+    <string name="marginal_button_to_logout">ログアウト</string>
+    <string name="marginal_button_next">次へ▶</string>
+    <string name="marginal_button_next_begin">再発行モードを起動</string>
+
+    <!--loading screen-->
+    <string name="loading_titlte">現在発券中です\n少々お待ちください</string>
+    <string name="loading_printing">印刷しています</string>
+
+    <!--over screen-->
+    <string name="over_titlte">発券が完了しました\nチケットをお受け取りください</string>
+
+    <!--select mode screen-->
+    <string name="select_mode_title">購入済みチケットの発券方法を選択してください</string>
+    <string name="select_mode_qr">QRコード</string>
+    <string name="select_mode_number">受付番号</string>
+
+    <!--select count screen-->
+    <string name="select_count_title">どちらかを選択してください</string>
+    <string name="select_count_all1">一緒に購入した他のチケットも</string>
+    <string name="select_count_all2">まとめて発券</string>
+    <string name="select_count_one">1枚のみ発券</string>
+
+    <!--need select target screen-->
+    <string name="need_select_target_title">どちらかを選択してください</string>
+    <string name="need_select_target_unneeded1">一緒に購入した他のチケットを</string>
+    <string name="need_select_target_unneeded2">すべて発券</string>
+    <string name="need_select_target_need1">発券するチケットを</string>
+    <string name="need_select_target_need2">選択する</string>
+
+    <!--select target screen-->
+    <string name="select_target_next_button">確認する▶</string>
+
+    <!--verify screen-->
+    <string name="verify_next_button">発券する▶︎</string>
+
+    <!--input screen-->
+    <string name="input_number">受付番号を入力してください</string>
+    <string name="input_telephone">購入時に登録した電話番号を入力してください</string>
+    <string name="input_password">再発行モードを起動するために、\n現在ログインしているユーザーのパスワードを入力してください</string>
+    <string name="input_password_notice">再発券モードを起動すると1度だけ発券済のチケットも含め発券可能となり、\n一度発券完了するか「通常モードに戻る」を押すと通常モードに戻ります</string>
+
+    <!--ticket status-->
+    <string name="ticket_status_over">発券済み</string>
+    <string name="ticket_status_printing">他発券中</string>
+    <string name="ticket_date_unit">発券済み:%1$s</string>
+
+    <!--all change mode-->
+    <string name="all_button_to_input_mode">受付番号</string>
+    <string name="all_button_to_qr_mode">QRコード</string>
+
+    <!--dialog text-->
+    <string name="dialog_ok_button">OK</string>
+
+    <!--general verify-->
+    <string name="verify_top_notice">発券するチケットは以下でよろしいですか？\nよろしけてば「発券する」ボタンを押してください</string>
+    <string name="select_target_count">選択枚数:%1$s枚</string>
+    <string name="select_target_order_num">受付番号:%1$s</string>
+    <string name="select_target_date">開催日時:%1$s</string>
+    <string name="select_target_name">公演名:%1$s</string>
+    <string name="select_target_title">発券したいチケットにチェックを入れてください</string>
+    <string name="verify_select_target_count">%1$s枚</string>
+
+    <!--error message-->
+    <string name="error_no_userName">ユーザー名を入力してください</string>
+    <string name="error_no_password">パスワードを入力してください</string>
+    <string name="error_no_companyCode">企業コードを入力してください</string>
+    <string name="error_no_orderNo">受付番号を入力してください</string>
+    <string name="error_no_tel">購入時に登録した電話番号を入力してください</string>
+    <string name="error_no_ticket">発券したいチケットを選択してください</string>
+    <string name="error_not_exit_print">プリンターが接続していません</string>
+    <string name ="error_open_port">Open Port Error</string>
+    <string name="error_not_support_bluetooth">Bluetoothがサポートされていません</string>
+    <string name="error_bluetooth_not_connect">Bluetoothが接続されていません</string>
+    <string name="error_scan_qrcode">QRコードの取得に失敗しました</string>
+    <string name="error_network">通信エラーが発生しました。ネットワークに接続できませんでした</string>
+    <string name="error_ticket_empty">発券できるチケットがありません</string>
+
+    <!--print-->
+    <string name="print_run">印刷実行中</string>
+    <string name="print_wait">しばらくお待ちください</string>
+    <string name="print_connect">接続処理中</string>
+    <string name="print_complete">印刷完了</string>
+    <string name="print_connect_success">接続しました</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="bottom_sheet_corner_radius">10dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="menu_title_text_size">32sp</dimen>
+    <dimen name="menu_subtitle_text_size">24sp</dimen>
+    <dimen name="menu_mode_test_size">18sp</dimen>
+
+</resources>

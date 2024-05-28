@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="jp.co.rakuten.ticket.checkinstation.ui.general.generalVerify.GeneralVerifyViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.login.LoginFragment">
+
+        <Button
+            android:id="@+id/buttonTop"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_rectangle_radius_shape"
+            android:backgroundTint="@color/black"
+            android:text="@string/marginal_button_top"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:gravity="center"
+            android:text="@string/verify_top_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="開催日時:2012年12月24日"/>
+
+        <TextView
+            android:id="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@id/dateText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="公演名:ダミー公演"/>
+
+        <TextView
+            android:id="@+id/ticketCountUnit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginEnd="20dp"
+            android:text="発券枚数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ticketCountText"
+            app:layout_constraintTop_toBottomOf="@id/dateText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="8枚"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ticketListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="150dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/bg_select_target"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/marginal_button_back"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="#BC444544"
+            android:background="@drawable/button_rectangle_radius_shape"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/verify_next_button"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:background="@drawable/button_rectangle_radius_shape"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <include layout="@layout/layout_card_loading" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

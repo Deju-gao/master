@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_all"
+    app:startDestination="@id/allQRStep1Fragment">
+
+    <fragment
+        android:id="@+id/allQRStep1Fragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allQRStep1.AllQRStep1Fragment"
+        android:label="AllQRStep1Fragment"
+        tools:layout="@layout/fragment_all_qrstep1">
+        <action
+            android:id="@+id/action_allQRStep1Fragment_to_allAgainFragment"
+            app:destination="@id/allAgainFragment" />
+        <action
+            android:id="@+id/action_allQRStep1Fragment_to_allLoadingFragment"
+            app:destination="@id/allLoadingFragment" />
+        <action
+            android:id="@+id/action_allQRStep1Fragment_to_allInputNumberFragment"
+            app:destination="@id/allInputNumberFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allInputNumberFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allInputNumber.AllInputNumberFragment"
+        android:label="AllInputNumberFragment"
+        tools:layout="@layout/fragment_all_input_number">
+        <action
+            android:id="@+id/action_allInputNumberFragment_to_allInputTelephoneFragment"
+            app:destination="@id/allInputTelephoneFragment" />
+        <action
+            android:id="@+id/action_allInputNumberFragment_to_allQRStep1Fragment"
+            app:destination="@id/allQRStep1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allInputTelephoneFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allInputTelephone.AllInputTelephoneFragment"
+        android:label="allInputTelephoneFragment"
+        tools:layout="@layout/fragment_all_input_telephone">
+        <action
+            android:id="@+id/action_allInputTelephoneFragment_to_allLoadingFragment"
+            app:destination="@id/allLoadingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allLoadingFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allLoading.AllLoadingFragment"
+        android:label="AllLoadingFragment"
+        tools:layout="@layout/fragment_all_loading">
+        <action
+            android:id="@+id/action_allLoadingFragment_to_allOverFragment"
+            app:destination="@id/allOverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allOverFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allOver.AllOverFragment"
+        android:label="AllOverFragment"
+        tools:layout="@layout/fragment_all_over">
+    </fragment>
+
+    <fragment
+        android:id="@+id/allAgainFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.all.allAgain.AllAgainFragment"
+        android:label="AllAgainFragment"
+        tools:layout="@layout/fragment_all_again">
+    </fragment>
+
+</navigation>

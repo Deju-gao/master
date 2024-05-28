@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302266090413",
+    "project_id": "ticket-check-in-station-dev",
+    "storage_bucket": "ticket-check-in-station-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302266090413:android:6241bce5a6993e2f351724",
+        "android_client_info": {
+          "package_name": "jp.co.rakuten.ticket.checkinstation.develop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302266090413-42qkav9u74vok03meh1gmhhll5vo4jfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE3YSdWMXXY5qn9ff3YrjfZkKZYIFNCZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302266090413-42qkav9u74vok03meh1gmhhll5vo4jfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="jp.co.rakuten.ticket.checkinstation.ui.general.generalSelectMode.GeneralSelectModeViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.login.LoginFragment">
+
+        <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/marginal_button_menu"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/button_rectangle_shape"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/allSelectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/select_mode_title"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/allSelectTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/allSelectQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:background="@drawable/button_rectangle_radius_shape"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="50dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qr_read"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/select_mode_qr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allSelectNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:background="@drawable/button_rectangle_radius_shape"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="50dp"
+                android:padding="50dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/orderno"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/select_mode_number"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAgain"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/marginal_button_again_false"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/button_rectangle_shape"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="100dp"/>
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/marginal_button_logout"
+            android:textSize="@dimen/menu_subtitle_text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/button_rectangle_shape"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="180dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

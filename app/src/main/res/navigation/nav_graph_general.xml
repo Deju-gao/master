@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_general"
+    app:startDestination="@id/generalSelectModeFragment">
+
+    <fragment
+        android:id="@+id/generalSelectModeFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalSelectMode.GeneralSelectModeFragment"
+        android:label="GeneralSelectModeFragment"
+        tools:layout="@layout/fragment_general_select_mode">
+        <action
+            android:id="@+id/action_generalSelectModeFragment_to_generalQRStep1Fragment"
+            app:destination="@id/generalQRStep1Fragment" />
+        <action
+            android:id="@+id/action_generalSelectModeFragment_to_generalInputNumberFragment"
+            app:destination="@id/generalInputNumberFragment" />
+        <action
+            android:id="@+id/action_generalSelectModeFragment_to_generalAgainFragment"
+            app:destination="@id/generalAgainFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/generalQRStep1Fragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalQRStep1.GeneralQRStep1Fragment"
+        android:label="GeneralQRStep1Fragment"
+        tools:layout="@layout/fragment_general_qrstep1">
+        <action
+            android:id="@+id/action_generalQRStep1Fragment_to_generalAgainFragment"
+            app:destination="@id/generalAgainFragment" />
+        <action
+            android:id="@+id/action_generalQRStep1Fragment_to_generalSelectCountFragment"
+            app:destination="@id/generalSelectCountFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalSelectCountFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalSelectCount.GeneralSelectCountFragment"
+        android:label="GeneralSelectCountFragment"
+        tools:layout="@layout/fragment_general_select_count">
+        <action
+            android:id="@+id/action_generalSelectCountFragment_to_generalNeedSelectFragment"
+            app:destination="@id/generalNeedSelectFragment" />
+        <action
+            android:id="@+id/action_generalSelectCountFragment_to_generalVerifyFragment"
+            app:destination="@id/generalVerifyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalInputNumberFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalInputNumber.GeneralInputNumberFragment"
+        android:label="generalInputNumberFragment"
+        tools:layout="@layout/fragment_general_input_number">
+        <action
+            android:id="@+id/action_generalInputNumberFragment_to_generalInputTelephoneFragment"
+            app:destination="@id/generalInputTelephoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalInputTelephoneFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalInputTelephone.GeneralInputTelephoneFragment"
+        android:label="GeneralInputTelephoneFragment"
+        tools:layout="@layout/fragment_general_input_telephone">
+        <action
+            android:id="@+id/action_generalInputTelephoneFragment_to_generalNeedSelectFragment"
+            app:destination="@id/generalNeedSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalNeedSelectFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalNeedSelect.GeneralNeedSelectFragment"
+        android:label="GeneralNeedSelectFragment"
+        tools:layout="@layout/fragment_general_need_select_target">
+        <action
+            android:id="@+id/action_generalNeedSelectFragment_to_generalVerifyFragment"
+            app:destination="@id/generalVerifyFragment" />
+        <action
+            android:id="@+id/action_generalNeedSelectFragment_to_generalSelectTargetFragment"
+            app:destination="@id/generalSelectTargetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalSelectTargetFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalSelectTarget.GeneralSelectTargetFragment"
+        android:label="GeneralSelectTargetFragment"
+        tools:layout="@layout/fragment_general_select_target">
+        <action
+            android:id="@+id/action_generalSelectTargetFragment_to_generalVerifyFragment"
+            app:destination="@id/generalVerifyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalVerifyFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalVerify.GeneralVerifyFragment"
+        android:label="GeneralVerifyFragment"
+        tools:layout="@layout/fragment_general_verify">
+        <action
+            android:id="@+id/action_generalVerifyFragment_to_generalLoadingFragment"
+            app:destination="@id/generalLoadingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalLoadingFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalLoading.GeneralLoadingFragment"
+        android:label="GeneralLoadingFragment"
+        tools:layout="@layout/fragment_general_loading">
+        <action
+            android:id="@+id/action_generalLoadingFragment_to_generalOverFragment"
+            app:destination="@id/generalOverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalOverFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalOver.GeneralOverFragment"
+        android:label="GeneralOverFragment"
+        tools:layout="@layout/fragment_general_over">
+    </fragment>
+
+    <fragment
+        android:id="@+id/generalAgainFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.general.generalAgain.GeneralAgainFragment"
+        android:label="GeneralAgainFragment"
+        tools:layout="@layout/fragment_general_again">
+    </fragment>
+
+</navigation>

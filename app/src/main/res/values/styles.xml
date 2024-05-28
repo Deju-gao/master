@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="LoginEditText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#7D1E1E1E</item>
+        <item name="android:background">@drawable/bg_login_edittext</item>
+    </style>
+
+</resources>

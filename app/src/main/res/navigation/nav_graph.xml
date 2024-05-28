@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.home.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu"
+        >
+
+<!--        <action-->
+<!--            android:id="@+id/action_menuFragment_to_printerSettingFragment"-->
+<!--            app:destination="@id/printerSettingFragment" />-->
+
+        <action
+            android:id="@+id/action_menuFragment_to_bcpPrinterSettingFragment"
+            app:destination="@id/bcpPrinterSettingFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_readTestFragment"
+            app:destination="@id/readTestFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_ticketModeFragment"
+            app:destination="@id/ticketModeFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_qrcodeImageFragment"
+            app:destination="@id/qrcodeImageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/printerSettingFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.printerSetting.PrinterSettingFragment"
+        android:label="PrinterSettingFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bcpPrinterSettingFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.bcpPrinterSetting.BcpPrinterSettingFragment"
+        android:label="BcpPrinterSettingFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/readTestFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.readTest.ReadTestFragment"
+        android:label="ReadTestFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ticketModeFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.ticketMode.TicketModeFragment"
+        android:label="TicketModeFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/qrcodeImageFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.menu.qrcodeImage.QRCodeImageFragment"
+        android:label="QRCodeImageFragment"
+        >
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_single"
+    app:startDestination="@id/singleQRStep1Fragment">
+
+    <fragment
+        android:id="@+id/singleQRStep1Fragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.single.singleQRStep1.SingleQRStep1Fragment"
+        android:label="SingleQRStep1Fragment"
+        tools:layout="@layout/fragment_single_qrstep1">
+        <action
+            android:id="@+id/action_singleQRStep1Fragment_to_singleAgainFragment"
+            app:destination="@id/singleAgainFragment" />
+        <action
+            android:id="@+id/action_singleQRStep1Fragment_to_singleLoadingFragment"
+            app:destination="@id/singleLoadingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleLoadingFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.single.singleLoading.SingleLoadingFragment"
+        android:label="SingleLoadingFragment"
+        tools:layout="@layout/fragment_single_loading">
+        <action
+            android:id="@+id/action_singleLoadingFragment_to_singleOverFragment"
+            app:destination="@id/singleOverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleOverFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.single.singleOver.SingleOverFragment"
+        android:label="SingleOverFragment"
+        tools:layout="@layout/fragment_single_over">
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleAgainFragment"
+        android:name="jp.co.rakuten.ticket.checkinstation.ui.single.singleAgain.SingleAgainFragment"
+        android:label="SingleAgainFragment"
+        tools:layout="@layout/fragment_single_again">
+    </fragment>
+
+</navigation>
